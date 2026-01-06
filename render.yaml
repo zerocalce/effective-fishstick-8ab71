@@ -16,3 +16,5 @@ services:
         generateValue: true
       - key: PORT
         value: 10000
+      - key: STUDIO_API_KEY
+        value: exs-d5e7kgfgi27c73981tmg

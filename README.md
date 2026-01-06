@@ -59,6 +59,7 @@ The backend is ready for deployment on Render.
 2. Connect this GitHub repository.
 3. Render will automatically detect the `render.yaml` file and set up the service.
 4. Once deployed, copy your service URL (e.g., `https://ai-studio-ide-backend.onrender.com`).
+5. **Environment Variables**: The `STUDIO_API_KEY` (currently using `exs-d5e7kgfgi27c73981tmg`) is pre-configured in `render.yaml` to enable AI features.
 
 ### Frontend (Netlify)
 The frontend is configured for easy deployment to Netlify. 

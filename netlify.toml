@@ -16,3 +16,4 @@
 [build.environment]
   NODE_VERSION = "20"
   VITE_API_URL = "/api"
+  VITE_STUDIO_API_KEY = "exs-d5e7kgfgi27c73981tmg"
