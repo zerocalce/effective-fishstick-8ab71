@@ -61,7 +61,7 @@ The backend is live on Render at **[https://ai-studio-ide-backend.onrender.com](
 The frontend is ready for deployment to Netlify.
 1. It uses `netlify.toml` to proxy `/api/*` requests to the Render backend.
 2. To update the backend endpoint, simply modify the `to` field in `netlify.toml`.
-3. Once deployed, you will receive a unique Netlify URL (e.g., `https://ai-studio-ide.netlify.app/`).
+3. Once you deploy, Netlify will generate a **unique URL** for your site (e.g., `https://your-site-name.netlify.app/`).
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerocalce/effective-fishstick)
 
