@@ -237,7 +237,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         {/* Footer info */}
         <p className="text-center text-slate-500 text-xs">
           Secure connection encrypted with 256-bit AES.<br />
-          © 2026 AI Studio IDE by <a href="https://comfy-daifuku-80d504.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Aldrin Reyes</a>. All rights reserved.
+          © 2026 AI Studio IDE by <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Aldrin Reyes</a>. All rights reserved.
         </p>
       </div>
 

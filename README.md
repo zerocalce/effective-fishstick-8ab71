@@ -72,7 +72,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📫 Contact
 
 **Aldrin Reyes**
-- **Portfolio**: [comfy-daifuku-80d504.netlify.app](https://comfy-daifuku-80d504.netlify.app)
+- **Portfolio**: [localhost:5173](http://localhost:5173)
 - **Email**: herocalze11@gmail.com
 - **GitHub**: [@zerocalce](https://github.com/zerocalce)
 - **Facebook**: [Aldrin Reyes](https://www.facebook.com/profile.php?id=100095179577581)

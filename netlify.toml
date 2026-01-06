@@ -4,6 +4,12 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "https://comfy-daifuku-80d504.netlify.app/*"
+  to = "http://localhost:5173/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api/*"
   to = "https://ai-studio-ide-backend.onrender.com/api/:splat"
   status = 200

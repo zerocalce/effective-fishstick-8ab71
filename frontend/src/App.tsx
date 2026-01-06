@@ -166,11 +166,11 @@ const App: React.FC = () => {
           />
           <div className="h-[1px] w-8 bg-slate-800 my-2" />
           <a 
-            href="https://comfy-daifuku-80d504.netlify.app/" 
+            href="http://localhost:5173/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 text-slate-500 hover:text-blue-500 hover:bg-slate-800 transition-all rounded-xl"
-            title="Visit Aldrin's Portfolio"
+            title="Visit Local Development"
           >
             <ExternalLink size={24} />
           </a>
@@ -186,13 +186,13 @@ const App: React.FC = () => {
                 <p className="text-[10px] text-slate-500">{user?.email}</p>
               </div>
               <a 
-                href="https://comfy-daifuku-80d504.netlify.app/" 
+                href="http://localhost:5173/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full flex items-center gap-2 p-3 text-sm text-slate-400 hover:bg-slate-800 transition-colors"
               >
                 <UserIcon size={16} />
-                <span>View Portfolio</span>
+                <span>Local Environment</span>
               </a>
               <button 
                 onClick={handleLogout}
