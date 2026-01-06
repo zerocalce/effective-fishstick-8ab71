@@ -1,0 +1,45 @@
+{"level":"error","message":"Invalid token attempt from ::ffff:127.0.0.1: jwt malformed"}
+{"level":"error","message":"Invalid token attempt from ::ffff:127.0.0.1: jwt malformed"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::ffff:127.0.0.1"}
+{"level":"warn","message":"Failed login attempt for email: math-smite-lance@duck.com from IP: ::ffff:127.0.0.1"}
+{"level":"warn","message":"Failed login attempt for email: math-smite-lance@duck.com from IP: ::ffff:127.0.0.1"}
+{"level":"warn","message":"Failed login attempt for email: math-smite-lance@duck.com from IP: ::ffff:127.0.0.1"}
+{"level":"info","message":"Successful login for user: math-smite-lance@duck.com (79c5730e-fe40-40a2-a02b-fcb7531e433a)"}
+{"level":"info","message":"Expired token attempt from ::1"}
+{"level":"info","message":"Expired token attempt from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
