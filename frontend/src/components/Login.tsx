@@ -193,21 +193,17 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
             </button>
           </form>
 
-          {/* Demo Credentials Section */}
+          {/* Admin Credentials Section */}
           <div className="mt-8 pt-8 border-t border-slate-800/60">
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-1.5 bg-amber-500/10 rounded-lg">
-                <Info size={14} className="text-amber-500" />
+              <div className="p-1.5 bg-blue-500/10 rounded-lg">
+                <ShieldCheck size={14} className="text-blue-500" />
               </div>
-              <h3 className="text-xs font-black text-slate-300 uppercase tracking-widest">Demo Access</h3>
+              <h3 className="text-xs font-black text-slate-300 uppercase tracking-widest">Admin Access</h3>
             </div>
             
             <div className="grid grid-cols-1 gap-3">
-              <div className="bg-blue-500/5 border border-blue-500/10 rounded-xl p-3 mb-2">
-                <h4 className="text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2 flex items-center gap-1.5">
-                  <ShieldCheck size={12} />
-                  Admin Account
-                </h4>
+              <div className="bg-blue-500/5 border border-blue-500/10 rounded-xl p-3">
                 <div className="flex items-center justify-between p-2 bg-slate-950/40 border border-slate-800/40 rounded-lg group hover:border-slate-700 transition-colors mb-2">
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-slate-500 uppercase">Email</span>
@@ -232,34 +228,6 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                     {copySuccess === 'password' ? <CheckCircle2 size={14} className="text-green-500" /> : <Copy size={14} />}
                   </button>
                 </div>
-              </div>
-
-              <div className="flex items-center justify-between p-3 bg-slate-950/40 border border-slate-800/40 rounded-xl group hover:border-slate-700 transition-colors">
-                <div className="flex flex-col">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase">Email</span>
-                  <span className="text-sm text-slate-300 font-mono">math-smite-lance@duck.com</span>
-                </div>
-                <button 
-                  onClick={() => handleCopy('math-smite-lance@duck.com', 'email')}
-                  className="p-2 text-slate-500 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-all"
-                  title="Copy email"
-                >
-                  {copySuccess === 'email' ? <CheckCircle2 size={16} className="text-green-500" /> : <Copy size={16} />}
-                </button>
-              </div>
-
-              <div className="flex items-center justify-between p-3 bg-slate-950/40 border border-slate-800/40 rounded-xl group hover:border-slate-700 transition-colors">
-                <div className="flex flex-col">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase">Password</span>
-                  <span className="text-sm text-slate-300 font-mono">lance@duck.com</span>
-                </div>
-                <button 
-                  onClick={() => handleCopy('lance@duck.com', 'password')}
-                  className="p-2 text-slate-500 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-all"
-                  title="Copy password"
-                >
-                  {copySuccess === 'password' ? <CheckCircle2 size={16} className="text-green-500" /> : <Copy size={16} />}
-                </button>
               </div>
             </div>
           </div>

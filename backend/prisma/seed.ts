@@ -4,41 +4,28 @@ import bcrypt from 'bcrypt';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('Seeding demo data...');
+  console.log('Seeding admin data...');
 
-  const adminPassword = await bcrypt.hash('lance@duck.com', 10);
-  const superAdminPassword = await bcrypt.hash('Milk2026', 10);
+  const adminPassword = await bcrypt.hash('Milk2026', 10);
 
-  // 1. Create Demo User
-  const demoUser = await prisma.user.upsert({
-    where: { email: 'math-smite-lance@duck.com' },
+  // 1. Create Admin User
+  const admin = await prisma.user.upsert({
+    where: { email: 'herocalze11@gmail.com' },
     update: { password: adminPassword },
     create: {
-      email: 'math-smite-lance@duck.com',
-      name: 'Demo Admin',
+      email: 'herocalze11@gmail.com',
+      name: 'Aldrin Reyes (Admin)',
       password: adminPassword,
       role: 'ADMIN'
     },
   });
 
-  // 2. Create Super Admin User
-  const superAdmin = await prisma.user.upsert({
-    where: { email: 'herocalze11@gmail.com' },
-    update: { password: superAdminPassword },
-    create: {
-      email: 'herocalze11@gmail.com',
-      name: 'Aldrin Reyes (Admin)',
-      password: superAdminPassword,
-      role: 'ADMIN'
-    },
-  });
-
-  // 3. Create a project for demo user
+  // 2. Create a project for admin user
   const project = await prisma.project.create({
     data: {
       name: 'Sentiment Analysis Demo',
       description: 'A pre-built NLP model for demo purposes.',
-      userId: demoUser.id,
+      userId: admin.id,
     },
   });
 

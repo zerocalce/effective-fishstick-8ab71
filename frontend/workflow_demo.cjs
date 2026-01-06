@@ -27,8 +27,8 @@ const puppeteer = require('puppeteer');
     console.log('\n--- Workflow Step 2: Spawn and Demonstrate AI Studio (5174) ---');
     await page.goto('http://localhost:5174/login');
     await page.waitForSelector('input[type="email"]');
-    await page.type('input[type="email"]', 'math-smite-lance@duck.com');
-    await page.type('input[type="password"]', 'lance@duck.com');
+    await page.type('input[type="email"]', 'herocalze11@gmail.com');
+    await page.type('input[type="password"]', 'Milk2026');
     await page.screenshot({ path: 'ai_studio_login.png' });
     
     console.log('Clicking login and waiting for navigation...');
