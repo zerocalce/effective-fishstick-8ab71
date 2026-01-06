@@ -20,10 +20,22 @@ interface InferenceResult {
 
 const ModelInferenceTest: React.FC = () => {
   const [selectedDeployment, setSelectedDeployment] = useState<Deployment | null>(null);
-  const [inputData, setInputData] = useState('{\n  "input": [[0.1, 0.2, ...]]\n}');
+  const [inputData, setInputData] = useState('{\n  "input": [[0.1, 0.2, 0.3, 0.4, 0.5]]\n}');
   const [inferenceResult, setInferenceResult] = useState<InferenceResult | null>(null);
   const [isTesting, setIsTesting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isJsonValid, setIsJsonValid] = useState(true);
+
+  // Real-time JSON validation
+  useEffect(() => {
+    try {
+      JSON.parse(inputData);
+      setIsJsonValid(true);
+      if (error === 'Invalid JSON payload') setError(null);
+    } catch {
+      setIsJsonValid(false);
+    }
+  }, [inputData, error]);
 
   const { data: deployments, isLoading } = useQuery<Deployment[]>({
     queryKey: ['deployments'],
@@ -151,20 +163,28 @@ const ModelInferenceTest: React.FC = () => {
               </div>
               <button 
                 onClick={handleTest}
-                disabled={!selectedDeployment || isTesting}
-                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:opacity-50 text-white px-4 py-1.5 rounded-md text-xs font-bold transition-all"
+                disabled={!selectedDeployment || isTesting || !isJsonValid}
+                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-800 disabled:opacity-50 text-white px-4 py-1.5 rounded-md text-xs font-bold transition-all shadow-lg shadow-blue-600/20 disabled:shadow-none"
               >
                 {isTesting ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
                 <span>{isTesting ? 'Sending...' : 'Test Inference'}</span>
               </button>
             </div>
-            <div className="p-0">
+            <div className="p-0 relative">
               <textarea 
                 value={inputData}
                 onChange={(e) => setInputData(e.target.value)}
-                className="w-full h-48 bg-slate-950 p-4 text-xs font-mono text-blue-300 focus:outline-none resize-none"
+                className={`w-full h-48 bg-slate-950 p-4 text-xs font-mono focus:outline-none resize-none transition-colors ${
+                  isJsonValid ? 'text-blue-300' : 'text-red-400 bg-red-400/5'
+                }`}
                 spellCheck={false}
               />
+              {!isJsonValid && (
+                <div className="absolute bottom-4 right-4 flex items-center space-x-1.5 px-2 py-1 bg-red-500/10 border border-red-500/20 rounded text-[10px] text-red-400 font-bold animate-pulse">
+                  <AlertCircle size={12} />
+                  <span>Invalid JSON</span>
+                </div>
+              )}
             </div>
           </div>
 

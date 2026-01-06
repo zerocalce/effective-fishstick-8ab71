@@ -46,3 +46,13 @@
 {"level":"info","message":"Successful login for user: demo@demo.demo (02e8df3f-8177-4566-bfce-fbce221aea96)"}
 {"level":"info","message":"Successful login for user: demo@demo.demo (02e8df3f-8177-4566-bfce-fbce221aea96)"}
 {"level":"info","message":"Successful login for user: demo@demo.demo (02e8df3f-8177-4566-bfce-fbce221aea96)"}
+{"level":"info","message":"Successful login for user: math-smite-lance@duck.com (79c5730e-fe40-40a2-a02b-fcb7531e433a)"}
+{"level":"info","message":"Expired token attempt from ::1"}
+{"level":"info","message":"Expired token attempt from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"warn","message":"Missing or invalid authorization header from ::1"}
+{"level":"info","message":"Successful login for user: math-smite-lance@duck.com (79c5730e-fe40-40a2-a02b-fcb7531e433a)"}
