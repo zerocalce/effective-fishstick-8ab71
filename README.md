@@ -1,4 +1,4 @@
-# Cynomesh AI Studio - Effective Fishstick
+# CYNOMESH - Autonomous Agent IDE
 
 An enterprise-grade IDE for building and managing autonomous agent frameworks, distributed intelligence layers, and AI-driven infrastructure.
 

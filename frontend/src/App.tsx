@@ -211,8 +211,11 @@ const App: React.FC = () => {
           {/* Header */}
           <div className="h-12 bg-studio-sidebar border-b border-slate-700 flex items-center justify-between px-4">
             <div className="flex items-center space-x-4">
-              <span className="font-bold text-studio-accent tracking-tighter text-xl">CYNOMESH</span>
-              <div className="h-4 w-[1px] bg-slate-700" />
+              <div className="flex flex-col">
+                <span className="font-bold text-studio-accent tracking-tighter text-xl leading-none">CYNOMESH</span>
+                <span className="text-[10px] text-slate-500 font-medium tracking-widest uppercase mt-0.5">Autonomous Agent IDE</span>
+              </div>
+              <div className="h-6 w-[1px] bg-slate-700 mx-2" />
               <div className="flex items-center space-x-2 text-sm text-slate-400">
                 <span>my-first-project</span>
                 <ChevronDown size={14} />
